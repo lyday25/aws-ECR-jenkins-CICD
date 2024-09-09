@@ -19,7 +19,14 @@ pipeline {
             }
         }
         
-        
+         stage("GitHub checkout") {
+            steps {
+                script {
+ 
+                    git branch: 'main', url: 'https://github.com/lyday25/aws-ECR-jenkins-CICD.git' 
+                }
+            }
+        }
   
     // Building Docker images
     stage('Building image') {
