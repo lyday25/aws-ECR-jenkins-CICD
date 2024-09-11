@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="975050273044"
-        AWS_DEFAULT_REGION="eu-north-1"
+        AWS_ACCOUNT_ID="0000000000000"
+        AWS_DEFAULT_REGION="eu-east-3"
         IMAGE_REPO_NAME="diamond-2"
         IMAGE_TAG="latest"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
